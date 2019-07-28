@@ -11,6 +11,7 @@ from app import forms, views
 # https://stackoverflow.com/a/51635038
 from django.views.static import serve
 from django.conf import settings
+from django.conf.urls import url
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -30,5 +31,5 @@ urlpatterns = [
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
-    path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]

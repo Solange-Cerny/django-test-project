@@ -113,7 +113,7 @@ STATIC_URL = '/static/'
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 #STATIC_ROOT = 'D:/home/site/wwwroot/static'
 
-STATIC_ROOT= os.path.join(BASE_DIR,'static')
+STATIC_ROOT= os.path.join(BASE_DIR,'static-files')
 
 STATICFILES_DIRS = [
     'D:/home/site/wwwroot/static',

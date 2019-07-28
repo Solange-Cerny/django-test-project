@@ -31,5 +31,5 @@ urlpatterns = [
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
-    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
+    url(r'^app/static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]

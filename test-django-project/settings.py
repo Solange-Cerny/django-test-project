@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '267b122c-e3d5-4518-93c2-f7f6601d4c12'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','django-test-project.azurewebsites.net']
 
@@ -110,11 +110,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_URL = '/app/static/'
-#STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
-#STATIC_ROOT = 'D:/home/site/wwwroot/static'
-
 STATIC_ROOT= os.path.join(BASE_DIR,'app/static')
-
 STATICFILES_DIRS = [
     'D:/home/site/wwwroot/app/static',
     os.path.join(BASE_DIR,'static'),

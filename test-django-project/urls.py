@@ -8,6 +8,9 @@ from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 from app import forms, views
 
+# https://stackoverflow.com/a/51635038
+from django.views.static import serve
+from django.conf import settings
 
 urlpatterns = [
     path('', views.home, name='home'),
@@ -27,4 +30,5 @@ urlpatterns = [
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
+    path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]

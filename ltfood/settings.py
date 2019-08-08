@@ -1,5 +1,5 @@
 """
-Django settings for test-django-project project.
+Django settings for ltfood project.
 
 Based on 'django-admin startproject' using Django 2.1.2.
 
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'test-django-project.urls'
+ROOT_URLCONF = 'ltfood.urls'
 
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'test-django-project.wsgi.application'
+WSGI_APPLICATION = 'ltfood.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {

@@ -1,5 +1,5 @@
 """
-Definition of urls for test-django-project.
+Definition of urls for ltfood.
 """
 
 from datetime import datetime
